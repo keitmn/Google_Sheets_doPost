@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "16824377-c3ac-4015-af56-0c83c766d42c",
+		"name": "Google Sheets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "PostToGoogleSheets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userID",
+							"value": "54631",
+							"type": "text"
+						},
+						{
+							"key": "sum",
+							"value": "5000",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "Тест",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "Ильин",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbwAWJIMlsRPUd8SisdAV4wsSHlEtfaVacTyIzN5b-IE85XvYGZ-NRPZ4U3G9FwAWnV00A/exec",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbwAWJIMlsRPUd8SisdAV4wsSHlEtfaVacTyIzN5b-IE85XvYGZ-NRPZ4U3G9FwAWnV00A",
+						"exec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetFromGoogleSheets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "54631",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "3000",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "Хозтовары",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "Ильин",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbyis-MGmTxmCQC0M6Hw5-w8rIAN03WYpzIGgklVjSLbVGB3WkdJ4dvViviCv10zmeM_Gg/exec?userID=54631&category=",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbyis-MGmTxmCQC0M6Hw5-w8rIAN03WYpzIGgklVjSLbVGB3WkdJ4dvViviCv10zmeM_Gg",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "userID",
+							"value": "54631"
+						},
+						{
+							"key": "category",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
